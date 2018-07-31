@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/register16bits/register16bits.vhd}
+vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/count8bits/count8bits.vhd}
+vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/countBits0/countBits0.vhd}
+vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/countBits1/countBits1.vhd}
+vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/toplevel/toplevel.vhd}
+

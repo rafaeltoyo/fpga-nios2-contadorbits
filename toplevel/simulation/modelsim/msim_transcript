@@ -1,0 +1,81 @@
+# Reading D:/Arquivos de Programa (x86)/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do toplevel_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Arquivos de Programa (x86)\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Arquivos de Programa (x86)\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/toplevel/toplevel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity toplevel
+# -- Compiling architecture behav of toplevel
+# vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/register16bits/register16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register16bits
+# -- Compiling architecture behav of register16bits
+# vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/count8bits/count8bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity count8bits
+# -- Compiling architecture behav of count8bits
+# vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/countBits0/countBits0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity countBits0
+# -- Compiling architecture behav of countBits0
+# vcom -93 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/countBits1/countBits1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity countBits1
+# -- Compiling architecture behav of countBits1
+# Load canceled
+# 
+vcom -reportprogress 300 -work work {D:/Biblioteca/Documentos/Arquivos Educação/UTFPR - Ensino superior/7 periodo/Lógica Reconfigurável/ContadorBits/toplevel/toplevel_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity toplevel_tb
+# -- Compiling architecture behav of toplevel_tb
+vsim work.toplevel_tb
+# vsim work.toplevel_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.toplevel_tb(behav)
+# Loading work.toplevel(behav)
+# Loading work.count8bits(behav)
+# Loading work.countbits0(behav)
+# Loading work.countbits1(behav)
+# Loading work.register16bits(behav)
+add wave -position insertpoint  \
+sim:/toplevel_tb/dut/clk \
+sim:/toplevel_tb/dut/write_en \
+sim:/toplevel_tb/dut/read_en \
+sim:/toplevel_tb/dut/write_bus \
+sim:/toplevel_tb/dut/read_bus
+run 5000 ns

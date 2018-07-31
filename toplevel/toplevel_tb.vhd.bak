@@ -1,0 +1,79 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+-- ENTITY 
+entity toplevel_tb is
+end entity;
+
+-- ARCHITECTURE
+architecture behav of toplevel_tb is
+
+	component toplevel is
+	port(
+			clk	: in std_logic;
+			rst	: in std_logic;
+			Data	: in std_logic_vector (7 downto 0);	-- Entrada		
+			LD 	: in std_logic;
+			EN		: in std_logic;
+			bits0	: out std_logic_vector (7 downto 0);
+			bits1	: out std_logic_vector (7 downto 0)
+		);
+	end component;
+	
+	signal clk, rst, LD_s, EN_s : std_logic;
+	
+	signal Data_s : std_logic_vector (7 downto 0);
+
+begin
+
+	dut:
+	toplevel port map (
+		clk => clk,
+		rst => rst,
+		Data => Data_s,
+		LD => LD_s,
+		EN => EN_s
+	);
+	
+	process
+	begin
+		clk <= '0';
+		wait for 10 ns;
+		clk <= '1';
+		wait for 10 ns;
+	end process;
+	
+	process
+	begin
+		rst <= '1';
+		wait for 20 ns;
+		rst <= '0';
+		wait;
+	end process;
+	
+	process
+	begin
+		LD_s <= '0';
+		Data_s <= "00000000";
+		wait for 500 ns;
+		LD_s <= '1';
+		Data_s <= "01101101";
+		wait for 10 ns;
+		LD_s <= '0';
+		wait;
+	end process;
+	
+	process
+	begin
+		EN_s <= '0';
+		wait for 10 ns;
+		EN_s <= '1';
+		wait for 1200 ns;
+		EN_s <= '0';
+		wait for 10 ns;
+		EN_s <= '1';
+		wait;
+	end process;
+	
+end architecture;

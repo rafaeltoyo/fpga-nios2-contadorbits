@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="SimpleNiosII">
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|HostSystem_cpu:cpu|HostSystem_cpu_register_bank_b_module:HostSystem_cpu_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_jcg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_aoc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_7ai.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|HostSystem_memory:memory|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_vcc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_rqf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_kp14.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_ubi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter" CBX_FILE_NAME="cntr_gui.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|HostSystem_cpu:cpu|HostSystem_cpu_register_bank_a_module:HostSystem_cpu_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_icg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HostSystem|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_u6j.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
